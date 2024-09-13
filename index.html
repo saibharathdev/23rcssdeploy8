@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        :root{
+    --height:350px;
+    --width:150px;
+    --border:1px solid black;
+    --boxshadow:3px 2px 2px;
+    --padding:10px;
+ }
+ .md{
+    border:var(--border);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    padding-top: 50px;
+    background-color:aquamarine;
+    
+ }
+.cd{
+    border: var(--border);
+    height: var(--height);
+    width: var(--width);
+    box-shadow: var(--boxshadow);
+    padding: var(--padding);
+ }
+ 
+ .img1{
+    margin-top: 10px;
+    margin-left: 15px;
+ }
+ .img2{
+    margin-top: 12px;
+    margin-left: 17px;
+    border-radius: 100px;
+ }
+ .img3{
+    margin-top: 10px;
+    margin-left: 15px;
+    border-radius: 100px;
+ }
+    </style>
+</head>
+<body>
+    <div class="md">
+        <div class="cd" style="background-color: white;">
+            <img class="img1"  src="https://cdn-icons-png.freepik.com/512/6230/6230750.png" height="120px"/>
+            <h3 style="text-align: center;">CODING</h3>
+            <p>Lorem ipsum dolor.sit amet consectetur adipisicing elit.Id repudiandae dolore veritatis nis eos delectus</p>
+        </div>
+        <div class="cd" style="background-color: rgb(214, 77, 155)">
+            <img class="img2"  src="https://img.freepik.com/premium-vector/kitchen-utensil-round-frame_18591-763.jpg" height="115px" width="115"/>
+            <h3 style="text-align: center; color: white; color: white;">COOKING</h3>
+            <p style="color: white;">Lorem ipsum dolor.sit amet consectetur adipisicing elit.Id repudiandae dolore veritatis nis eos delectus</p>
+        </div>
+        <div class="cd" style="background-color: white;">
+            <img class="img3"  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVHxTTBflRpb8hqceA_9Q6tG2G9p2zxMnTbw&s" height="120px" width="115px"/>
+            <h3 style="text-align: center;">CYCLING</h3>
+            <p>Lorem ipsum dolor.sit amet consectetur adipisicing elit.Id repudiandae dolore veritatis nis eos delectus</p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
